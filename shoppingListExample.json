@@ -1,0 +1,20 @@
+[
+    {
+        "id": 15,
+        "name": "Chocolate", 
+        "bought": 1
+    },
+    {
+        "id": 14,
+        "name": "Chicken", 
+        "bought": 0
+    },
+    {
+        "name": "Cheese", 
+        "bought": 1
+    },
+    {
+        "name": "Milk", 
+        "bought": 0
+    }
+]
