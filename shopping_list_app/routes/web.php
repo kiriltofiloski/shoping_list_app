@@ -23,4 +23,6 @@ Route::middleware('auth')->group(function () {
     Route::get('shoppingListitem/export', [ShoppingListItemController::class,'export'])->name('shoppingListItem.export');
 });
 
+Route::redirect('/', '/shoppingListItem');
+
 require __DIR__.'/auth.php';

@@ -101,18 +101,15 @@ class ShoppingListItemController extends Controller
         }
 
         foreach ($json as $itemData){
-            if(isset($itemData['id'])){
-                $id = $itemData['id'];
-                $shoppingListItem = ShoppingListItem::find($id);
-                if($shoppingListItem){
+            if(isset($itemData['name'])){
+                $name = $itemData['name'];
+                $shoppingListItem = ShoppingListItem::whereName($name)->first();
+                if($shoppingListItem !== null){
                     $shoppingListItem->update($itemData);
                 }
                 else{
                     ShoppingListItem::create($itemData);
                 }
-            }
-            else{
-                ShoppingListItem::create($itemData);
             }
         }
 
