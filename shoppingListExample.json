@@ -1,11 +1,9 @@
 [
     {
-        "id": 15,
         "name": "Chocolate", 
         "bought": 1
     },
     {
-        "id": 14,
         "name": "Chicken", 
         "bought": 0
     },
