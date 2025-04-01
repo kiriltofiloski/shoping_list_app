@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\ShoppingListItem;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,6 +19,15 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+            'password'=> bcrypt('admin123'),
         ]);
+
+        User::factory()->create([
+            'name' => 'Test User 2',
+            'email' => 'test2@example.com',
+            'password'=> bcrypt('admin123'),
+        ]);
+
+        ShoppingListItem::factory(10)->create();
     }
 }

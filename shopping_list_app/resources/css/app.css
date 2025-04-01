@@ -1,3 +1,163 @@
+/* Base Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Components */
+.item-card {
+    @apply max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden;
+}
+
+.item-header {
+    @apply bg-gradient-to-r from-blue-500 to-blue-600 py-4 px-6;
+}
+
+.item-title {
+    @apply text-xl font-semibold text-white;
+}
+
+.item-status {
+    @apply px-3 py-1 text-xs font-semibold rounded-full;
+}
+
+.item-status-bought {
+    @apply bg-green-100 text-green-800;
+}
+
+.item-status-pending {
+    @apply bg-gray-100 text-gray-800;
+}
+
+.item-content {
+    @apply p-6;
+}
+
+.item-field-group {
+    @apply mb-6;
+}
+
+.item-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.item-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+}
+
+.item-checkbox {
+    @apply h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded;
+}
+
+.item-actions {
+    @apply flex items-center justify-end space-x-4;
+}
+
+.item-button {
+    @apply px-4 py-2 rounded-md transition;
+}
+
+.item-button-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white;
+}
+
+.item-button-secondary {
+    @apply text-gray-600 hover:text-gray-800;
+}
+
+.error-message {
+    @apply mt-1 text-sm text-red-600;
+}
+
+/* Table Container */
+.admin-table-container {
+    @apply bg-white rounded-lg shadow overflow-hidden mt-8;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+/* Table Structure */
+.admin-table {
+    @apply min-w-full;
+}
+
+/* Table Header */
+.admin-table-header {
+    @apply bg-gray-50;
+}
+
+.admin-table-th {
+    @apply text-left text-sm font-medium text-gray-500 uppercase tracking-wider px-6 py-4;
+}
+
+/* Table Body */
+.admin-table-body {
+    @apply bg-white;
+}
+
+/* Table Rows */
+.admin-table-row {
+    @apply hover:bg-gray-50;
+    margin-bottom: 12px;
+}
+
+/* Table Cells */
+.admin-table-td {
+    @apply text-sm px-6 py-5;
+}
+
+/* Item Name Link */
+.item-name-link {
+    @apply text-blue-600 hover:text-blue-800 hover:underline transition-colors;
+}
+
+/* Status Badges */
+.status-badge {
+    @apply px-4 py-2 text-xs font-semibold rounded-full;
+}
+
+.status-bought {
+    @apply bg-green-100 text-green-800;
+}
+
+.status-pending {
+    @apply bg-gray-100 text-gray-800;
+}
+
+/* Action Buttons */
+.action-button {
+    @apply text-sm font-medium px-4 py-2 rounded-md transition-colors;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+.edit-button {
+    @apply bg-blue-50 text-blue-600 hover:bg-blue-100 border border-blue-200;
+}
+
+.delete-button {
+    @apply bg-red-50 text-red-600 hover:bg-red-100 border border-red-200;
+}
+
+.inline-form {
+    @apply inline;
+}
+
+/* Header Styles */
+.admin-header {
+    @apply flex justify-between items-center mb-10;
+}
+
+.admin-title {
+    @apply text-2xl font-bold text-gray-800;
+}
+
+/* New Item Button */
+.admin-create-button {
+    @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2.5 rounded-lg transition flex items-center;
+}
+
+/* Pagination */
+.pagination-container {
+    @apply mt-10;
+}
